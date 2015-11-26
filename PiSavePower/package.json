@@ -1,0 +1,10 @@
+{
+  "name": "PiSavePower",
+  "version": "0.0.0",
+  "description": "PiSavePower",
+  "main": "server.js",
+  "author": {
+    "name": "ShwetaY",
+    "email": ""
+  }
+}
