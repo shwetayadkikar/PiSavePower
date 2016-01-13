@@ -1,0 +1,22 @@
+﻿{
+  "api_key": "60_5JHynVBBL44Pg4Anmdw",
+  "from_email": "shweta.yadkikar@zevenseas.com",
+  "from_name": "Shweta",
+  "to": [
+    {
+      "email": "shweta.yadkikar@zevenseas.com",
+      "name": "Shweta Office",
+      "type": "to"
+    },
+    {
+      "email": "omkar.khair@zevenseas.com",
+      "name": "Omkar Khair",
+      "type": "to"
+    }
+  ],
+  "text": "Device has been ON for more than half an hour. Turn it Off now!",
+  "subject": "Save Power",
+  "onState": "ON",
+  "pin": 5,
+  "port": 1337
+}

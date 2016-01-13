@@ -45,27 +45,63 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="configService.js" />
+    <Compile Include="emailService.js" />
     <Compile Include="server.js" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\WideLogo.scale-100.png" />
+    <Content Include="config.json" />
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="Assets\Logo.scale-100.png" />
-    <Content Include="Assets\SmallLogo.scale-100.png" />
-    <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\StoreLogo.scale-100.png" />
-    <Content Include="Assets\WideLogo.scale-100.png" />
+    <Content Include="Assets\en-US\Logo.scale-100.png" />
+    <Content Include="Assets\en-US\SmallLogo.scale-100.png" />
+    <Content Include="Assets\en-US\SplashScreen.scale-100.png" />
+    <Content Include="Assets\en-US\StoreLogo.scale-100.png" />
+    <Content Include="Assets\en-US\WideLogo.scale-100.png" />
     <None Include="PiSavePower_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
+    <Folder Include="Assets\en-US\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsUwp.targets" />
   <PropertyGroup>
     <PlatformAware>true</PlatformAware>
     <AvailablePlatforms>x86,x64,ARM</AvailablePlatforms>
   </PropertyGroup>
-  <ProjectExtensions />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{00251f00-ba30-4ce4-96a2-b8a1085f37aa}" Configuration="Debug" Platform="x86">
+        <NodejsUwpProjectFlavorCfg />
+      </FlavorProperties>
+      <FlavorProperties GUID="{00251f00-ba30-4ce4-96a2-b8a1085f37aa}" Configuration="Release" Platform="x86">
+        <NodejsUwpProjectFlavorCfg />
+      </FlavorProperties>
+      <FlavorProperties GUID="{00251f00-ba30-4ce4-96a2-b8a1085f37aa}" Configuration="Debug" Platform="x64">
+        <NodejsUwpProjectFlavorCfg />
+      </FlavorProperties>
+      <FlavorProperties GUID="{00251f00-ba30-4ce4-96a2-b8a1085f37aa}" Configuration="Release" Platform="x64">
+        <NodejsUwpProjectFlavorCfg />
+      </FlavorProperties>
+      <FlavorProperties GUID="{00251f00-ba30-4ce4-96a2-b8a1085f37aa}" Configuration="Debug" Platform="ARM">
+        <NodejsUwpProjectFlavorCfg>
+          <NodeExeArguments>--debug</NodeExeArguments>
+          <DebuggerMachineName>192.168.1.7</DebuggerMachineName>
+        </NodejsUwpProjectFlavorCfg>
+      </FlavorProperties>
+      <FlavorProperties GUID="{00251f00-ba30-4ce4-96a2-b8a1085f37aa}" Configuration="Release" Platform="ARM">
+        <NodejsUwpProjectFlavorCfg>
+          <NodeExeArguments>--debug</NodeExeArguments>
+          <DebuggerMachineName>192.168.1.7</DebuggerMachineName>
+        </NodejsUwpProjectFlavorCfg>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
